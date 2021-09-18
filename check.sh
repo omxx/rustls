@@ -6,8 +6,8 @@ echo
 File="../results/medium.txt"
 Lines=$(cat $File)
 
-THUMBS_UP='\U1F44D'
-RED_CROSS='\U274C'
+OK="\xE2\x9C\x94"
+RED_CROSS="\u274c"
 
 for Line in $Lines; do
    echo "$Line"
@@ -20,7 +20,7 @@ for Line in $Lines; do
       echo -e "${RED_CROSS} ${hostname} failed TLS cert check"
       echo
    else
-      echo -e "${THUMBS_UP} ${hostname} is valid"
+      echo -e "${OK} ${hostname} is valid"
       echo "$Line" >>../results/final.txt
       echo
    fi
