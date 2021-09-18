@@ -6,8 +6,8 @@ echo
 File="../results/medium.txt"
 Lines=$(cat $File)
 
-OK="\xE2\x9C\x94"
-RED_CROSS="\u274c"
+OK="\xE2\x9C\x85"
+RED_CROSS="\xE2\x9D\x8C"
 
 for Line in $Lines; do
    echo "$Line"
